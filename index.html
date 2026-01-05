@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro-Dent - Gabinet Stomatologiczny</title>
+    <link rel="stylesheet" href="pro-dent-style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-icon">🦷</span>
+                <h2>Pro-Dent</h2>
+            </div>
+            <div class="nav-title">Pro-Dent</div>
+            <div class="nav-links">
+                <button class="nav-btn active" data-tab="home">Home</button>
+                <button class="nav-btn" data-tab="services">Usługi</button>
+                <button class="nav-btn" data-tab="pricing">Cennik</button>
+                <button class="nav-btn" data-tab="contact">Kontakt</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- HOME TAB -->
+            <section id="home" class="tab-content active">
+                <div class="home-wrapper">
+                    <!-- Gallery on the left -->
+                    <div class="home-gallery">
+                        <div class="gallery-container">
+                            <div class="gallery-wrapper">
+                                <div class="gallery-track" id="galleryTrack">
+                                    <div class="gallery-item">
+                                        <div class="gallery-placeholder">🦷</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="gallery-placeholder">😁</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="gallery-placeholder">🪥</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="gallery-placeholder">✨</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <div class="gallery-placeholder">💎</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="gallery-btn prev" id="galleryPrev">❮</button>
+                            <button class="gallery-btn next" id="galleryNext">❯</button>
+                        </div>
+                    </div>
+
+                    <!-- Text content on the right -->
+                    <div class="home-content">
+                        <h1>Witamy w PRO-DENT!</h1>
+                        <div class="home-description">
+                            <p>Witam Państwa w moim gabinecie stomatologicznym. Oferuję Państwu możliwość leczenia się w komfortowych warunkach, przy użyciu najnowocześniejszych urządzeń oraz materiałów stomatologicznych, ponieważ na pierwszym miejscu stawiam wysoką jakość wykonywanych usług.</p>
+                            <p>Najnowocześniejsze technologie stosowane przez gabinet łączą skuteczne leczenie z doskonałym efektem estetycznym. Dzięki stosowaniu kamery wewnątrzustnej pacjent ma możliwość zobaczenia na ekranie monitora zarówno ubytków próchnicowych, przebarwień, złogów nazębnych, jak i końcowego efektu leczenia.</p>
+                            <div class="doctor-signature">
+                                <p><strong>lek. stomatolog Dorota Marszewska</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES TAB -->
+            <section id="services" class="tab-content">
+                <h1>Usługi</h1>
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon"><img src="1.jpg" alt="Stomatologia dziecięca"></div>
+                        <h3>Stomatologia dziecięca</h3>
+                        <p>Leczenie mlecznych zębów jest równie ważne jak leczenie zębów stałych. Zwlekanie z leczeniem ubytków w ząbkach mlecznych szybko skutkuje silnym bólem zęba. Przedwczesna utrata mlecznego uzębienia nieuchronnie prowadzi do powstania wad zgryzu. Warto zadbać o zęby naszych pociech stosując profilaktykę (lakowanie i lakierowanie) oraz przyprowadzając dzieci na przeglądy nawet co 3 miesiące. Częste wizyty nie pozwolą na powstanie dużego ubytku, a dziecko oswoi się z koniecznością leczenia zębów.</p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon"><img src="2.jpg" alt="Chirurgia"></div>
+                        <h3>Chirurgia</h3>
+                        <p>Przeprowadzam zabiegi usuwania zębów jedno i wielokorzeniowych, dłutowanie korzeni oraz leczenie ropni przyzębnych. Wszystkie zabiegi przeprowadzane są w znieczuleniu miejscowym. Należy jednak pamiętać, że ekstrakcja zęba jest ostatecznością i dokładam wszelkich starań aby do tego nie dopuścić, wykorzystując najnowsze osiągnięcia medycyny.</p>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon"><img src="3.jpg" alt="Wybielanie zębów"></div>
+                        <h3>Wybielanie zębów</h3>
+                        <p>Przeprowadzam zabiegi wybielania zębów z wykorzystaniem najlepszych materiałów dostępnych obecnie na rynku medycznym.</p>
+                    </div>
+
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon"><img src="4.jpg" alt="Profilaktyka"></div>
+                        <h3>Profilaktyka</h3>
+                        <p>Wiadomo, że lepiej jest zapobiegać niż leczyć. W gabinecie można wykonać między innymi:
+
+                            okresowe przeglądy z dokładnym instruktażem higieny jamy ustnej,
+                            fluoryzację zębów mlecznych i stałych,
+                            lakowanie zdrowych zębów stałych w celu zabezpieczenia bruzd przed procesem próchnicowym
+                            usuwanie złogów nazębnych za pomocą skalera ultradzwiękowego
+                            usuwanie osadu za pomocą piaskarki</p>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon"><img src="5.jpg" alt="Protetyka"></div>
+                        <h3>Protetyka</h3>
+                        <p>Wykonuję prace protetyczne stałe, takie jak licówki, korony porcelanowe i mosty. W przypadku rozległych braków zębowych niezbędne jest wykonanie prac ruchomych: protez szkieletowych, również na zatrzaskach, protez valplast oraz protez akrylowych. Zaletą protez szkieletowych jest ich cienka, metalowa konstrukcja i stabilny sposób umocowania za pomocą klamer. Są one znacznie trwalsze niż protezy akrylowe i nie mają niszczącego szpływu na wyrostek zębodołowy.</p>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-icon"><img src="6.jpg" alt="Stomatologia zachowawcza"></div>
+                        <h3>Stomatologia zachowawcza</h3>
+                        <p>W celu uzupełnienia utraconych tkanek zęba (próchnica, uraz) wykorzystuję nowoczesne materiały światłoutwardzalne kompozytowe i glasjonomerowe. Wypełnienia są trwałe i estetycze, dopasowane kształtem i kolorem do zęba. Przy użyciu włokien szklanych możliwa jest odbudowa nawet znacznie zniszczonych lub złamanych zębów. Stosowanie znieczuleń miejscowych zapewnia bezbolesne przeprowadzenie każdego zabiegu.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRICING TAB -->
+            <section id="pricing" class="tab-content">
+                <h1>Cennik Usług</h1>
+                <div class="pricing-inner">
+                    <div class="pricing-grid">
+                    <div class="price-card">
+                        <div class="price-title">Stomatologia zachowawcza</div>
+                        <table class="pricing-table static">
+                            <tbody>
+                                <tr><td>Wypełnienie małe</td><td>170 zł</td></tr>
+                                <tr><td>Wypełnienie średnie</td><td>180 zł</td></tr>
+                                <tr><td>Wypełnienie duże</td><td>200 zł</td></tr>
+                                <tr><td>Rozległa odbudowa zęba</td><td>300 zł</td></tr>
+                                <tr><td>Odbudowa na włóknie szklanym</td><td>350 zł</td></tr>
+                                <tr><td>Opatrunek leczniczy</td><td>100 zł</td></tr>
+                                <tr><td>Ćwiek okołomiazgowy</td><td>50 zł</td></tr>
+                                <tr><td class="note">Znieczulenie w cenie każdego zabiegu</td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-title">Stomatologia dziecięca</div>
+                        <table class="pricing-table static">
+                            <tbody>
+                                <tr><td>Lakowanie jednego zęba</td><td>70 zł</td></tr>
+                                <tr><td>Fluoryzacja</td><td>100 zł</td></tr>
+                                <tr><td>Wypełnienie zęba mlecznego</td><td>100 zł</td></tr>
+                                <tr><td>Ekstrakcja zęba mlecznego</td><td>80 zł</td></tr>
+                                <tr><td>Dewitalizacja zęba mlecznego</td><td>80 zł</td></tr>
+                                <tr><td>Trepanacja zęba mlecznego</td><td>50 zł</td></tr>
+                                <tr><td>Lapisowanie zębów mlecznych</td><td>30 zł</td></tr>
+                                <tr><td class="note">Znieczulenie w cenie każdego zabiegu</td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-title">Endodoncja</div>
+                        <table class="pricing-table static">
+                            <tbody>
+                                <tr><td>Dewitalizacja</td><td>100 zł</td></tr>
+                                <tr><td>Trepanacja</td><td>100 zł</td></tr>
+                                <tr><td>Każda wizyta podczas leczenia kanałowego</td><td>100 zł</td></tr>
+                                <tr><td>Wypełnienie ostateczne jednego kanału</td><td>150 zł</td></tr>
+                                <tr><td>Wypełnienie ostateczne dwóch kanałów</td><td>200 zł</td></tr>
+                                <tr><td>Wypełnienie ostateczne trzech kanałów</td><td>250 zł</td></tr>
+                                <tr><td class="note">Znieczulenie w cenie każdego zabiegu</td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-title">Profilaktyka</div>
+                        <table class="pricing-table static">
+                            <tbody>
+                                <tr><td>Przegląd uzębienia</td><td>100 zł</td></tr>
+                                <tr><td>Skaling za jeden łuk</td><td>100 zł</td></tr>
+                                <tr><td>Piaskowanie</td><td>200-300 zł</td></tr>
+                                <tr><td>Fluoryzacja jednego łuku</td><td>50 zł</td></tr>
+                                <tr><td>Wydanie zaświadczenia o stanie uzębienia</td><td>100 zł</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-title">Chirurgia</div>
+                        <table class="pricing-table static">
+                            <tbody>
+                                <tr><td>Ekstrakcja</td><td>100-200 zł</td></tr>
+                                <tr><td>Szycie</td><td>50 zł</td></tr>
+                                <tr><td>Przepłukanie zębodołu z opatrunkiem</td><td>50 zł</td></tr>
+                                <tr><td class="note">Znieczulenie w cenie każdego zabiegu</td><td></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="price-card">
+                        <div class="price-title">Protetyka</div>
+                        <table class="pricing-table static">
+                            <tbody>
+                                <tr><td>Wkład koronowo-korzeniowy</td><td>250 zł</td></tr>
+                                <tr><td>Korona porcelanowa na metalu</td><td>800 zł</td></tr>
+                                <tr><td>Korona całoceramiczna</td><td>1500 zł</td></tr>
+                                <tr><td>Proteza akrylowa częściowa</td><td>750 zł</td></tr>
+                                <tr><td>Proteza akrylowa całkowita</td><td>800 zł</td></tr>
+                                <tr><td>Proteza szkieletowa</td><td>1800 zł</td></tr>
+                                <tr><td>Szyna relaksacyjna</td><td>500 zł</td></tr>
+                                <tr><td>Naprawa protezy</td><td>150-250 zł</td></tr>
+                                <tr><td>Podścielenie protezy</td><td>300 zł</td></tr>
+                                <tr><td>Zdjęcie korony</td><td>100 zł</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT TAB -->
+            <section id="contact" class="tab-content">
+                <h1>Kontakt</h1>
+                <div class="contact-container">
+                    <div class="contact-info-list">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <p>Fenikowskiego 21/16 84-200 Wejherowo</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <p>+48 503 122 030</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-text">
+                                <p>pro-dent@pro-dent.eu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">⏰</div>
+                            <div class="contact-text">
+                                <p>w celu umówienia wizyty proszę o kontakt telefoniczny w godzinach pracy gabinetu.</p>
+                            </div>
+                        </div>
+                        <div class="contact-hours">
+                            <table>
+                                <tbody>
+                                    <tr><td>Poniedziałek</td><td>15:00-19:00</td></tr>
+                                    <tr><td>Wtorek</td><td>9:00-12:00</td></tr>
+                                    <tr><td>Środa</td><td>15:00-19:00</td></tr>
+                                    <tr><td>Czwartek</td><td>9:00-12:00</td></tr>
+                                    <tr><td>Piątek</td><td>15:00-19:00</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2330.5869383742837!2d18.2673!3d54.6!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46fd5a8d8d8d8d8d%3A0x0!2sWejherowo!5e0!3m2!1spl!2spl!4v1234567890" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Pro-Dent</h4>
+                    <p>Gabinet Stomatologiczny</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Godziny Otwarcia</h4>
+                    <p>Poniedziałek 15:00-19:00<br>Wtorek 9:00-12:00<br>Środa 15:00-19:00<br>Czwartek 9:00-12:00<br>Piątek 15:00-19:00</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontakt</h4>
+                    <p>Tel: +48 58 672 34 56<br>Email: info@pro-dent.pl</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Pro-Dent. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pro-dent-script.js"></script>
+</body>
+</html>
