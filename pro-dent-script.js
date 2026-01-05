@@ -1,15 +1,36 @@
-// Tab Switching
+// Scroll Navigation
 document.querySelectorAll('.nav-btn').forEach(btn => {
     btn.addEventListener('click', () => {
         const tabName = btn.dataset.tab;
+        const element = document.getElementById(tabName);
         
-        // Remove active class from all buttons and tabs
-        document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
-        
-        // Add active class to clicked button and corresponding tab
-        btn.classList.add('active');
-        document.getElementById(tabName).classList.add('active');
+        if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+            
+            // Update active button
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+    });
+});
+
+// Update active nav button on scroll
+window.addEventListener('scroll', () => {
+    const sections = document.querySelectorAll('.tab-content');
+    let current = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - 100) {
+            current = section.getAttribute('id');
+        }
+    });
+    
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-tab') === current) {
+            btn.classList.add('active');
+        }
     });
 });
 
